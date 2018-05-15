@@ -1,0 +1,50 @@
+.card {
+  float: left;
+  width: 33%;
+  text-align: center;
+  padding: 2rem;
+
+  &:hover {
+    background-color: rgba($color-grey-light, 0.5);
+  }
+
+  &__image {
+    padding: 3rem;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    color: $color-primary;
+  }
+
+  &__description {
+    color: $color-grey-dark;
+    padding: 2rem;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  &__price {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: $color-primary;
+
+    &__currency {
+      display: inline-block;
+      vertical-align: top;
+      font-weight: 700;
+    }
+
+    &__value {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+}
